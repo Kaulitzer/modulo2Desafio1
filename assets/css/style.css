@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('Roboto-Bold/Roboto-Bold.ttf') format('truetype');
+}
+body {
+    font-family: 'Roboto Bold', sans-serif;
+}
+h1 {
+    font-size: 45px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    background-color: rgb(240, 239, 239);
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1 {
+    color: #394145;
+    font-size: 2.5em;
+    padding-top: 1em;
+}
+
+.main p {
+    color: #626c70;
+    font-size: 1em;
+    max-width: 490px;
+    text-align: center;
+}
+
+.logo {
+    width: 15em;
+    height: 15em;
+}
+
+#profile {
+    width: 3em;
+    border-radius: 50%;
+}
+
+.menu {
+    min-height: 100vh;
+    width: 18em;
+    background-color: white;
+}
+
+.head {
+    display: flex;
+    border: 0.6px #EF7F6D;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+}
+
+.name {
+    text-align: left;
+}
+
+.light {
+    font-weight: 100;
+    color: rgb(152, 152, 152);
+}
+
+.options {
+    display: flex;
+    width: 3em;
+    justify-content: space-between;
+    align-items: center;
+}
+.options a {
+    font-size: 1.2em;
+    color: rgb(152, 152, 152);
+}
+.options a:hover {
+    color: rgb(129, 128, 128);
+}
+
+.button {
+    display: flex;
+    border: 0.6px silver solid;
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    background-color: #A491D2;
+    padding: 1em 3em;
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #7f4997;
+}
+button:focus {
+    background-color: gray;
+}
+
+.chat {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+    border: 0.6px silver solid;
+    cursor: pointer;
+    align-items: flex-start;
+    height: 3rem;
+}
+.chat-text {
+    flex-grow: 1;
+    text-align: start;
+}
+.img-chat {
+    width: 3em;
+    min-width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.img-chat:hover {
+    transform: scale(1.3);
+    border: #EF7F6D;
+}
+
+.name-friend p {
+    text-align: start;
+    padding-left: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
